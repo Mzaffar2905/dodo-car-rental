@@ -1,8 +1,10 @@
 <h1>List of vehicles</h1>
+<ul>
 <% @vehicles.each do |vehicle| %>
-<%= vehicle.types_vehicles %>
+<li>
 <%= vehicle.make %>
 <%= vehicle.model%>
-<%= vehicle.transmission%>
-<%= vehicle.passengers%>
+<%=link_to "Show More",vehicle_path(vehicle) %>
+</li>
 <% end %>
+</ul>

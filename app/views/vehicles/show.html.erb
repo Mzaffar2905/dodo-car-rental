@@ -1,0 +1,10 @@
+
+<ul>
+<li><%=@vehicle.make %></li>
+<li><%= @vehicle.model %></li>
+<li><%= @vehicle.transmission%></li>
+<li><%= @vehicle.types_vehicles%></li>
+<li><%= @vehicle.passengers%></li>
+</ul>
+<%=link_to "Back",vehicles_path %>
+<%=link_to "Book Now",new_vehicle_booking_path(@vehicle)%>
