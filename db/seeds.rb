@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Vehicle.destroy_all
+User.create(email:"test@test.com")
+Vehicle.create!(make:"Toyota", model:"Corolla", transmission:"Automatic", types_vehicles:"sedan", passengers:5, user:User.last)
+Vehicle.create!(make:"Honda", model:"Civic", transmission:"Manual", types_vehicles:"Sedan", passengers:5, user:User.last)
+Vehicle.create!(make:"Mitshubishi", model:"Evolution", transmission:"Automatic", types_vehicles:"sedan", passengers:5, user:User.last)
+Vehicle.create!(make:"Hyundai", model:"Creta", transmission:"Manual", types_vehicles:"SUV", passengers:5, user:User.last)
+Vehicle.create!(make:"peugeot", model:"307 HDI", transmission:"Manual", types_vehicles:"Hatchback", passengers:5, user:User.last)
+Vehicle.create!(make:"BMW", model:"M4", transmission:"Manual", types_vehicles:"Sedan", passengers:5, user:User.last)
+Vehicle.create!(make:"Ferrari", model:"Stradale SF90", transmission:"Manual", types_vehicles:"Coupe", passengers:2, user:User.last)
+Vehicle.create!(make:"BMW", model:"X6", transmission:"Manual", types_vehicles:"SUV", passengers:5, user:User.last)
+Vehicle.create!(make:"Mercedes", model:"AMG C63", transmission:"Automatic", types_vehicles:"Coupe", passengers:2, user:User.last)
+Vehicle.create!(make:"Mazda", model:"CX-30", transmission:"Manual", types_vehicles:"SUV", passengers:5, user:User.last)
