@@ -2,9 +2,14 @@ class BookingsController < ApplicationController
   def index
     @bookings = Booking.all
   end
+
   def new
     @vehicle = Vehicle.find(params[:vehicle_id])
     @booking = Booking.new
+  end
+
+  def show
+    @booking = Booking.find(params[:id])
   end
 
   def create

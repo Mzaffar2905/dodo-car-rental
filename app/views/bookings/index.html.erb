@@ -1,0 +1,8 @@
+<ul>
+<%@bookings.each do |booking| %>
+<li><%= booking.return %> <%=link_to "Delete", booking_path(booking), method: :delete%>
+</li> 
+ <%end%>
+ </ul>
+
+ <%=link_to "Back", vehicles_path%>
