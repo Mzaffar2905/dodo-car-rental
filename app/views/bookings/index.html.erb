@@ -1,8 +1,8 @@
 <h1>My Bookings</h1>
 <ul>
-<%@bookings.each do |booking| %>
-<li><%= booking.return %> <%=link_to "Delete", booking_path(booking), method: :delete%>
-</li> 
+  <%@bookings.each do |booking| %>
+    <li><%= booking.return %> <%=link_to "Delete", booking_path(booking), method: :delete%>
+    </li>
  <%end%>
  </ul>
 

@@ -1,10 +1,10 @@
 <h1>List of vehicles</h1>
 <ul>
-<% @vehicles.each do |vehicle| %>
-<li>
-<%= vehicle.make %>
-<%= vehicle.model%>
-<%=link_to "Show More",vehicle_path(vehicle) %>
-</li>
+ <% @vehicles.each do |vehicle| %>
+   <li>
+  <%= vehicle.make %>
+  <%= vehicle.model%>
+ <%=link_to "Show More",vehicle_path(vehicle) %>
+   </li>
 <% end %>
 </ul>
