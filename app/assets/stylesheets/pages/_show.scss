@@ -13,7 +13,7 @@ body {
   transform: translate(-50%, -50%);
   height: 560px;
   width: 750px;
-  background: #f2f2f2;
+  background: #faf7f7;
   overflow: hidden;
   border-radius: 20px;
   cursor: pointer;
@@ -44,6 +44,7 @@ h3 {
 }
 
 .flap::before {
+  opacity: 0.8;
   position: absolute;
   content: "";
   height: 100%;
@@ -55,6 +56,7 @@ h3 {
 }
 
 .flap::after {
+  opacity: 0.8;
   position: absolute;
   content: "";
   height: 100%;
