@@ -1,21 +1,15 @@
 
-<html>
-<head>
-
 <h1>DODO-CarRental</h1>
-<p>Choose your types of vehicles below: </p>
-  <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
 
-    <div class="banner" style="background-image: url(images/banner.jpg);">
-    <div class="container">
+
+    <div class="banner" style="background-image: url(<%= image_path 'banner.jpg' %>)">
+    
       <strong>Find best car Here For rent</strong><br>
       <span>Find our list of vehicles</span>
-      <a class="btn-primary" href= "http://localhost:3000/vehicles" >vehicle List!</a>
+      <%= link_to "List Vehicles", vehicles_path %>
        <a class="btn-primary" href= "http://localhost:3000/bookings" >My Booking List!</a>
     </div>
-  </div>
+  
 
   <!-- code a footer -->
   <div class="footer">
@@ -28,5 +22,3 @@
 
     </div>
   </div>
-  </body>
-  </html>
