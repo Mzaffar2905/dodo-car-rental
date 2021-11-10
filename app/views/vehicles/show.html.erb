@@ -13,6 +13,7 @@
   <li>Transmission: <%=@vehicle.transmission%></li>
   <li>Types_Vehicles: <%=@vehicle.types_vehicles%></li>
   <li>Number of Passengers: <%=@vehicle.passengers%></li>
+  <li>Price: $<%=@vehicle.price%></li>
 </ul>
 
 <%=link_to "Book Now", new_vehicle_booking_path(@vehicle), class: "btn btn-flat" %>

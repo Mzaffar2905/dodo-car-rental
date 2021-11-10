@@ -20,7 +20,7 @@
         <li class="nav-item dropdown">
           <%= image_tag "https://cdn-icons-png.flaticon.com/512/3237/3237476.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "My Booking", "http://localhost:3000/bookings", class: "dropdown-item" %>
+            <%= link_to "My Booking", bookings_path, class: "dropdown-item" %>
             <%= link_to "List Vehicles", vehicles_path, class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
