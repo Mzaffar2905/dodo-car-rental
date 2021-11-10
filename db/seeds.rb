@@ -15,5 +15,5 @@ Vehicle.create!(make:"peugeot", model:"307 HDI", transmission:"Manual", types_ve
 Vehicle.create!(make:"BMW", model:"M4", transmission:"Manual", types_vehicles:"Sedan", passengers:5, user:User.last)
 Vehicle.create!(make:"Ferrari", model:"Stradale SF90", transmission:"Manual", types_vehicles:"Coupe", passengers:2, user:User.last)
 Vehicle.create!(make:"BMW", model:"X6", transmission:"Manual", types_vehicles:"SUV", passengers:5, user:User.last)
-Vehicle.create!(make:"Mercedes", model:"AMG C63", transmission:"Automatic", types_vehicles:"Coupe", passengers:2, user:User.last)
-Vehicle.create!(make:"Mazda", model:"CX-30", transmission:"Manual", types_vehicles:"SUV", passengers:5, user:User.last)
+Vehicle.create!(make:"Volkswagen", model:"Scirocco", transmission:"Manual", types_vehicles:"Hatchback", passengers:4, user:User.last)
+Vehicle.create!(make:"Porsche", model:"Caymen", transmission:"Automatic", types_vehicles:"Coupe", passengers:2, user:User.last)
