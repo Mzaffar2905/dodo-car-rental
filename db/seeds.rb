@@ -17,3 +17,5 @@ Vehicle.create!(make:"Ferrari", model:"Stradale SF90", transmission:"Manual", ty
 Vehicle.create!(make:"BMW", model:"X6", transmission:"Manual", types_vehicles:"SUV", passengers:5, user:User.last)
 Vehicle.create!(make:"Volkswagen", model:"Scirocco", transmission:"Manual", types_vehicles:"Hatchback", passengers:4, user:User.last)
 Vehicle.create!(make:"Porsche", model:"Caymen", transmission:"Automatic", types_vehicles:"Coupe", passengers:2, user:User.last)
+Vehicle.create!(make:"Lamborghini", model:"Aventador SVG", transmission:"Automatic", types_vehicles:"coupe", passengers:2, user:User.last)
+Vehicle.create!(make:"Audi", model:"Q8", transmission:"Manual", types_vehicles:"SUV", passengers:4, user:User.last)
