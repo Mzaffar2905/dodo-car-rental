@@ -14,11 +14,6 @@
 <li>Number of Passengers: <%=@vehicle.passengers%></li>
 </ul>
 
-  <a class="btn btn-flat" href="http://localhost:3000/vehicles/11/bookings/new">Book now</a>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-  </a>
+<%=link_to "Book Now", new_vehicle_booking_path(@vehicle), class: "btn btn-flat" %>
 
 <a class="btn btn-flat" href="http://localhost:3000/vehicles">Back</a>
