@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900');
-@import url('https://fonts.googleapis.com/css?family=Exo:700');
-@import url('https://fonts.googleapis.com/css?family=Abel');
+// @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900');
+// @import url('https://fonts.googleapis.com/css?family=Exo:700');
+// @import url('https://fonts.googleapis.com/css?family=Abel');
 
 
 .cards {
@@ -73,7 +73,13 @@
     margin: 0;
     
   }
+.buttons{
+  margin-bottom: 30px;
+}
+   .btn-blue{
+    border-radius: 10px;
+  }
 
-  .buttons{
-    margin-bottom: 30px;
+  .notice{
+    display: none;
   }
