@@ -1,5 +1,11 @@
-<%= simple_form_for ([@vehicle, @booking]), method: :post do |f| %>
-<%= f.input :booking %>
-<%= f.input :return %>
-<%= f.button :submit %>
-<% end %>
+<div class="container">
+     <div class="container">
+      <div align="center" class="banner" style="background-image: url(/assets/567118.jpg)">
+      <%= simple_form_for ([@vehicle, @booking]), method: :post do |f| %>
+      <%= f.input :booking %>
+      <%= f.input :return %>
+      <%= f.button :submit, class:"btn btn-primary btn-blue"%>
+      <% end %>
+      </div>
+     </div>
+</div>
