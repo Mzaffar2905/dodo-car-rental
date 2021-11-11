@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: rgba(116, 113, 113, 0.397);
+  
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,10 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-fonts {
+  font-weight: bold;
+  font-size: 30px;
+  font-family:'Trebuchet MS' ;
 }
