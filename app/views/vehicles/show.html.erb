@@ -1,10 +1,11 @@
-<div class="container-open-close">
+
+<div class="container-open-close d-flex">
   <div class="content">
-    <img src="http://loremflickr.com/800/800/<%= @vehicle.make %>%20<%= @vehicle.model %>"/>
+    <img src="http://loremflickr.com/300/300/<%= @vehicle.make %>%20<%= @vehicle.model %>"/>
    </div>
    <div class="flap">
   </div>
-</div>
+
 
 
 <ul>
@@ -15,7 +16,11 @@
   <li>Number of Passengers: <%=@vehicle.passengers%></li>
   <li>Price: $<%=@vehicle.price%></li>
 </ul>
+</div>
 
-<%=link_to "Book Now", new_vehicle_booking_path(@vehicle), class: "btn btn-flat" %>
+<div class="hello ">
+<%=link_to "Back", vehicles_path, class:"btn btn-primary btn-m btn-blue" %>
+<%=link_to "Book Now", new_vehicle_booking_path(@vehicle), class:"btn btn-primary btn-m btn-blue " %>
 
-<a class="btn btn-flat" href="http://localhost:3000/vehicles">Back</a>
+<!--<a class="btn btn-flat" href="http://localhost:3000/vehicles">Back</a>-->
+</div>
