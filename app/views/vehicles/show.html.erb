@@ -1,26 +1,25 @@
-
 <div class="container-open-close d-flex">
   <div class="content">
-    <img src="http://loremflickr.com/300/300/<%= @vehicle.make %>%20<%= @vehicle.model %>"/>
-   </div>
-   <div class="flap">
+    <%= cl_image_tag @vehicle.photo.key, height: 300, width: 400, crop: :fill %>
   </div>
-
-
-
-<ul>
-  <li>Make: <%=@vehicle.make %></li>
-  <li>Model: <%=@vehicle.model %></li>
-  <li>Transmission: <%=@vehicle.transmission%></li>
-  <li>Types_Vehicles: <%=@vehicle.types_vehicles%></li>
-  <li>Number of Passengers: <%=@vehicle.passengers%></li>
-  <li>Price: $<%=@vehicle.price%></li>
-</ul>
+    <div class="flap">
 </div>
 
-<div class="hello ">
-<%=link_to "Back", vehicles_path, class:"btn btn-primary btn-m btn-blue" %>
-<%=link_to "Book Now", new_vehicle_booking_path(@vehicle), class:"btn btn-primary btn-m btn-blue " %>
+
+
+  <ul>
+    <li>Make: <%=@vehicle.make %></li>
+    <li>Model: <%=@vehicle.model %></li>
+    <li>Transmission: <%=@vehicle.transmission%></li>
+    <li>Types_Vehicles: <%=@vehicle.types_vehicles%></li>
+    <li>Number of Passengers: <%=@vehicle.passengers%></li>
+    <li>Price: $<%=@vehicle.price%></li>
+  </ul>
+  </div>
+
+  <div class="hello ">
+  <%=link_to "Back", vehicles_path, class:"btn btn-primary btn-m btn-blue" %>
+  <%=link_to "Book Now", new_vehicle_booking_path(@vehicle), class:"btn btn-primary btn-m btn-blue " %>
 
 <!--<a class="btn btn-flat" href="http://localhost:3000/vehicles">Back</a>-->
 </div>
