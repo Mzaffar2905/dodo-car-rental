@@ -5,7 +5,7 @@ body {
   background: #f2f2f2;
 }
 
-.container  {
+.container-open-close {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -61,11 +61,11 @@ body {
   transition: 1s;
 }
 
-.container:hover .flap::after {
+.container-open-close:hover .flap::after {
   transform: translatex(300px);
  }
 
-.container:hover .flap::before {
+.container-open-close:hover .flap::before {
   transform: translatex(-300px);
 }
 
