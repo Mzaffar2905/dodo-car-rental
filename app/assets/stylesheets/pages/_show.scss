@@ -6,23 +6,25 @@ body {
 }
 
 .container-open-close {
+  align-items: center;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 560px;
-  width: 750px;
+  height: 600px;
+  width: 900px;
   background: #faf7f7;
   overflow: hidden;
+  padding-right: 10px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 0 0 20px 8px #d0d0d0;
-
 }
 
 
 .content {
   position: absolute;
+  left: 6%;
   top: 50%;
   transform: translatey(-50%);
   text-align: justify;
@@ -42,7 +44,7 @@ body {
   content: "";
   height: 100%;
   width: 50%;
-  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") #f0e1e7;;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
   background-position: 100px;
   background-repeat: no-repeat;
   transition: 1s;
@@ -55,25 +57,28 @@ body {
   height: 100%;
   width: 50%;
   right: 0;
-  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg")#f0e1e7;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg")white;
   background-position: -200px;
   background-repeat: no-repeat;
   transition: 1s;
 }
 
 .container-open-close:hover .flap::after {
-  transform: translatex(300px);
+  transform: translatex(500px);
  }
 
 .container-open-close:hover .flap::before {
-  transform: translatex(-300px);
+  transform: translatex(-500px);
 }
 
 
 ul,li {
+  display: flow-root;
+  display:  table-row;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 1.5rem;
   font-display: left;
-  font-family: 'Times New Roman', Times, serif;
+  //font-family: 'Times New Roman', Times, serif;
 }
 
 .hello{
@@ -82,5 +87,5 @@ ul,li {
   margin-top: 610px;
   margin-left: 90px;
   margin-right: 60px;
- 
+
 }
