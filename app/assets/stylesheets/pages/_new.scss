@@ -16,5 +16,38 @@
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  
+
+}
+
+body {
+  background-image: url(567969-car-wallpaper-top-free-2560x1440-car-background.jpg);
+}
+
+
+// my code css
+
+h4 {
+  position: relative;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 700;
+  font-size:40px;
+  color: #F4FF52;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  margin-left: 65px;
+}
+
+#banner-typed-text {
+  color: #F4FF52;
+  font-style: italic;
+}
+/* We create a pseudo element and blur it using the SVG filter. We’ll grab the content from the custom HTML attribute. */
+
+
+
+/* We hide the SVG filter element from the DOM as it would take up some space */
+
+svg {
+  display: none;
 }
