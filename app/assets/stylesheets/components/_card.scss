@@ -8,6 +8,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
     margin-bottom: 20px;
+    margin-right: 6px;
+    margin-left: 6px;
     
     
   }
@@ -82,9 +84,15 @@
    .btn-blue{
     border-radius: 10px;
   }
-
+  .btn-show{
+    border-radius: 10px;
+    margin-top: 6px;
+  }
   .notice{
     display: none;
   }
 
-
+.head{
+  text-align: center;
+  margin-top: 5px;
+}
