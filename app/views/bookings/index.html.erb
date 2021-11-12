@@ -1,16 +1,16 @@
 <div class="container temp1">
-     <div class="b-form-container" style="background-image: url(/assets/1_meLmIZWFt-TbNi8i4kobuw.jpg); background-size: cover;">
-      <div align="center" class="banner">
+  <div class="b-form-container" style="background-image: url('https://data.1freewallpapers.com/detail/auto-headlight-dark-background.jpg'); background-size: cover;">
+    <div style="text-align: center;" class="bookings-view">
 
-<h1>My Bookings</h1>
-<ul>
-  <%@bookings.each do |booking| %>
-    <li><%= booking.return %> <%=link_to "Delete", booking_path(booking), class:"btn btn-danger btn-sm btn-blue", method: :delete%>
-    </li>
- <%end%>
- </ul>
+      <h1 style="color: #F4FF52; font-weight: bold;">My Bookings</h1>
 
- <%=link_to "Back", vehicles_path, class:"btn btn-primary btn-m btn-blue"%>
- </div>
-     </div>
+        <%@bookings.each do |booking|%>
+        <div class="del-btn d-flex justify-content-center m-2">
+        <div class= "m-3" style= "color:white;"> <%= booking.return %> </div> <%=link_to "Delete", booking_path(booking), class:"btn btn-danger m-3 align-item-center", method: :delete%>
+        </div>
+        <%end%>
+
+        <%=link_to "Back", vehicles_path, class:"btn btn-primary btn-m btn-blue"%>
+    </div>
+  </div>
 </div>
