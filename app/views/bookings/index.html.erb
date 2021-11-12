@@ -1,9 +1,16 @@
+<div class="container temp1">
+     <div class="b-form-container" style="background-image: url(/assets/1_meLmIZWFt-TbNi8i4kobuw.jpg); background-size: cover;">
+      <div align="center" class="banner">
+
 <h1>My Bookings</h1>
 <ul>
   <%@bookings.each do |booking| %>
-    <li><%= booking.return %> <%=link_to "Delete", booking_path(booking), method: :delete%>
+    <li><%= booking.return %> <%=link_to "Delete", booking_path(booking), class:"btn btn-danger btn-sm btn-blue", method: :delete%>
     </li>
  <%end%>
  </ul>
 
- <%=link_to "Back", vehicles_path%>
+ <%=link_to "Back", vehicles_path, class:"btn btn-primary btn-m btn-blue"%>
+ </div>
+     </div>
+</div>
