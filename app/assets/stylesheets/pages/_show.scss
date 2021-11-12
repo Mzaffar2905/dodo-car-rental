@@ -10,6 +10,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  margin-top: 70px;
   transform: translate(-50%, -50%);
   height: 600px;
   width: 900px;
@@ -71,21 +72,11 @@ body {
   transform: translatex(-500px);
 }
 
-
-ul,li {
-  display: flow-root;
-  display:  table-row;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  font-size: 1.5rem;
-  font-display: left;
-  //font-family: 'Times New Roman', Times, serif;
-}
-
 .hello{
   display: flex;
   justify-content: space-around;
-  margin-top: 610px;
-  margin-left: 90px;
-  margin-right: 60px;
+}
 
+.details{
+  height: 100vh;
 }
